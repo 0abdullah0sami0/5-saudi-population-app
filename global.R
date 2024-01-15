@@ -1,0 +1,12 @@
+library(shiny)
+library(readxl)
+library(tidyverse)
+library(plotly)
+library(RColorBrewer)
+library(shinydashboard)
+library(shinythemes)
+library(shinyWidgets)
+library(scales)
+
+PopulationinbroadAgeGroups <- read.csv("data/PopulationinbroadAgeGroups.csv")
+names(PopulationinbroadAgeGroups) = c("nationality","broad_age_groups","age_groups","region","gender","population")
